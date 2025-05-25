@@ -55,7 +55,7 @@ body {
     top: 0;
     left: 0;
     transform: none;
-    margin: 30px 20px 30px 20px;
+    margin: 15px 10px 20px 10px;
     width: 300px;
     height: 300px;
     display: flex;
@@ -90,8 +90,8 @@ body {
 }
 
 .upgrades-panel {
-    position: absolute;
-    bottom: 0;
+    position: relative;
+    margin-top: 10px;
     left: 0;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.95);
