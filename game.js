@@ -14,53 +14,53 @@ const upgrades = {
         basePrice: 50,
         multiplier: 1,
         level: 0,
-        priceMultiplier: 1.5
+        priceMultiplier: 2
     },
     'gardener-hand': {
-        basePrice: 150,
+        basePrice: 300,
         multiplier: 2,
         level: 0,
-        priceMultiplier: 1.5
+        priceMultiplier: 2
     },
     'double-salad': {
-        basePrice: 500,
+        basePrice: 1000,
         multiplier: 2,
         level: 0,
-        priceMultiplier: 1.5
+        priceMultiplier: 2
     },
     'giant-salad': {
-        basePrice: 2000,
+        basePrice: 10000,
         multiplier: 10,
         level: 0,
-        priceMultiplier: 1.5
+        priceMultiplier: 2
     },
     'small-garden': {
         basePrice: 100,
         rate: 1,
         amount: 1,
         level: 0,
-        priceMultiplier: 1.5
+        priceMultiplier: 2
     },
     'snail-farm': {
-        basePrice: 400,
+        basePrice: 1000,
         rate: 1,
         amount: 5,
         level: 0,
-        priceMultiplier: 1.5
+        priceMultiplier: 2
     },
     'auto-farm': {
-        basePrice: 1000,
+        basePrice: 3000,
         rate: 1,
         amount: 10,
         level: 0,
-        priceMultiplier: 1.5
+        priceMultiplier: 2
     },
     'robot-picker': {
-        basePrice: 3000,
+        basePrice: 10000,
         rate: 0.5,
         amount: 1,
         level: 0,
-        priceMultiplier: 1.5
+        priceMultiplier: 2
     }
 };
 
