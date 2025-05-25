@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escargot Clicker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="score-container">
+            <h1>Escargots: <span id="score">0</span></h1>
+        </div>
+        <div class="click-area">
+            <img src="salad.png" alt="Salade" id="salad" class="clickable">
+        </div>
+        <div class="upgrades-panel">
+            <div class="upgrades-section">
+                <h2>🖱️ Améliorations du clic</h2>
+                <div class="upgrades-list">
+                    <div class="upgrade-item">
+                        <div class="upgrade-info">
+                            <h3>Doigt gluant</h3>
+                            <p>+1 escargot par clic</p>
+                            <p class="price">Prix: <span>50</span> escargots</p>
+                        </div>
+                        <button class="upgrade-button" data-upgrade="sticky-finger">Acheter</button>
+                    </div>
+                    <div class="upgrade-item">
+                        <div class="upgrade-info">
+                            <h3>Main du jardinier</h3>
+                            <p>+2 escargots par clic</p>
+                            <p class="price">Prix: <span>150</span> escargots</p>
+                        </div>
+                        <button class="upgrade-button" data-upgrade="gardener-hand">Acheter</button>
+                    </div>
+                    <div class="upgrade-item">
+                        <div class="upgrade-info">
+                            <h3>Double salade</h3>
+                            <p>Le clic donne 2× plus d'escargots</p>
+                            <p class="price">Prix: <span>500</span> escargots</p>
+                        </div>
+                        <button class="upgrade-button" data-upgrade="double-salad">Acheter</button>
+                    </div>
+                    <div class="upgrade-item">
+                        <div class="upgrade-info">
+                            <h3>Salade géante</h3>
+                            <p>+10 escargots par clic</p>
+                            <p class="price">Prix: <span>2000</span> escargots</p>
+                        </div>
+                        <button class="upgrade-button" data-upgrade="giant-salad">Acheter</button>
+                    </div>
+                </div>
+            </div>
+            <div class="upgrades-section">
+                <h2>🏭 Production automatique</h2>
+                <div class="upgrades-list">
+                    <div class="upgrade-item">
+                        <div class="upgrade-info">
+                            <h3>Petit potager</h3>
+                            <p>+1 escargot/seconde</p>
+                            <p class="price">Prix: <span>100</span> escargots</p>
+                        </div>
+                        <button class="upgrade-button" data-upgrade="small-garden">Acheter</button>
+                    </div>
+                    <div class="upgrade-item">
+                        <div class="upgrade-info">
+                            <h3>Élevage d'escargots</h3>
+                            <p>+5 escargots/seconde</p>
+                            <p class="price">Prix: <span>400</span> escargots</p>
+                        </div>
+                        <button class="upgrade-button" data-upgrade="snail-farm">Acheter</button>
+                    </div>
+                    <div class="upgrade-item">
+                        <div class="upgrade-info">
+                            <h3>Ferme automatique</h3>
+                            <p>+10 escargots/seconde</p>
+                            <p class="price">Prix: <span>1000</span> escargots</p>
+                        </div>
+                        <button class="upgrade-button" data-upgrade="auto-farm">Acheter</button>
+                    </div>
+                    <div class="upgrade-item">
+                        <div class="upgrade-info">
+                            <h3>Robot ramasseur</h3>
+                            <p>Clique tout seul toutes les 2s</p>
+                            <p class="price">Prix: <span>3000</span> escargots</p>
+                        </div>
+                        <button class="upgrade-button" data-upgrade="robot-picker">Acheter</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html> 

@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-container {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.score-container {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 10;
+}
+
+.score-container h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.click-area {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clickable {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+.clickable:active {
+    transform: scale(0.95);
+}
+
+.snail {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    pointer-events: none;
+    z-index: 5;
+    transition: transform 0.1s;
+}
+
+.snail:hover {
+    transform: scale(1.1);
+}
+
+.upgrades-panel {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    border-top: 2px solid #333;
+    max-height: 50vh;
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.upgrades-section {
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.upgrades-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
+}
+
+.upgrades-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.upgrade-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    transition: transform 0.2s;
+    width: 100%;
+}
+
+.upgrade-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.upgrade-info {
+    flex: 1;
+    text-align: center;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.upgrade-info h3 {
+    color: #333;
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+.upgrade-info p {
+    color: #666;
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+}
+
+.price {
+    color: #2ecc71 !important;
+    font-weight: bold;
+}
+
+.upgrade-button {
+    width: 100%;
+    padding: 6px 12px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 0.9rem;
+}
+
+.upgrade-button:hover {
+    background-color: #27ae60;
+    transform: scale(1.05);
+}
+
+.upgrade-button:disabled {
+    background-color: #95a5a6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-200px) scale(0.5);
+        opacity: 0;
+    }
+} 
