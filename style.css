@@ -49,6 +49,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 100;
 }
 
 .clickable {
@@ -89,6 +90,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+    z-index: 100;
 }
 
 .upgrades-section {
