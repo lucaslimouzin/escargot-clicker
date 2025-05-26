@@ -50,6 +50,18 @@ body {
     margin: 0;
 }
 
+.rate {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 5px;
+}
+
+.click-rate {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 2px;
+}
+
 .click-area {
     position: relative;
     top: 0;
@@ -82,11 +94,23 @@ body {
     height: 25px;
     pointer-events: none;
     z-index: 5;
-    transition: transform 0.1s;
+    transition: transform 0.3s ease;
 }
 
 .snail:hover {
     transform: scale(1.1);
+}
+
+.giant-snail {
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+}
+
+.mega-giant-snail {
+    width: 100px;
+    height: 100px;
+    z-index: 2;
 }
 
 .upgrades-panel {
@@ -200,4 +224,37 @@ body {
         transform: translateY(-200px) scale(0.5);
         opacity: 0;
     }
+}
+
+.snail-types {
+    margin-top: 10px;
+    font-size: 0.8rem;
+}
+
+.snail-types table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.snail-types th, .snail-types td {
+    padding: 4px 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.snail-types th {
+    background-color: #2ecc71;
+    color: white;
+    font-weight: bold;
+}
+
+.snail-types tr:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+.snail-types tr:hover {
+    background-color: #f0f0f0;
 } 

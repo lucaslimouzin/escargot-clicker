@@ -9,7 +9,29 @@
 <body>
     <div class="game-container">
         <div class="score-container">
-            <h1>Escargots: <span id="score">0</span></h1>
+            <h1>Score: <span id="score">0</span></h1>
+            <p class="rate">Génération: <span id="rate">0</span>/s</p>
+            <p class="click-rate">Par clic: <span id="click-rate">1</span></p>
+            <div class="snail-types">
+                <table>
+                    <tr>
+                        <th>Type</th>
+                        <th>Nombre</th>
+                    </tr>
+                    <tr>
+                        <td>Petit escargot</td>
+                        <td id="small-snail-count">0</td>
+                    </tr>
+                    <tr>
+                        <td>Escargot géant</td>
+                        <td id="giant-snail-count">0</td>
+                    </tr>
+                    <tr>
+                        <td>Escargot méga géant</td>
+                        <td id="mega-giant-snail-count">0</td>
+                    </tr>
+                </table>
+            </div>
         </div>
         <div class="click-area">
             <img src="salad.png" alt="Salade" id="salad" class="clickable">
